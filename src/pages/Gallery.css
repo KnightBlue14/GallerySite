@@ -1,0 +1,70 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.image-card {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.image-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.image-card:hover .image-background {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.popup-content {
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem;
+  pointer-events: none; /* Prevents hover flickering when moving mouse to text */
+  max-width: 90%;
+}
+
+.popup-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #f0f0f0;
+}
+
+.popup-content p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+
+.meta-info {
+  display: block;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
