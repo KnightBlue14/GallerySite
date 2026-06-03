@@ -6,7 +6,7 @@ const imageData = [
   { id: 3, src: 'https://picsum.photos/seed/3/600/400', title: 'Sample 3', description: 'Sample 3', meta: '3' },
   { id: 4, src: 'src/pages/DioDreamEvil.png', title: 'Dio', description: 'Dream Evil', meta: '1987' },
   { id: 5, src: 'src/pages/ELO_OotB.png', title: 'ELO', description: 'Out of the Blue', meta: '1977' },
-  { id: 6, src: 'src/pages/ELO_OotB.png', title: 'Pink Floyd', description: 'Dark Side of the Moon', meta: '1973' },
+  { id: 6, src: 'src/pages/albumoftheyear.png', title: 'Pink Floyd', description: 'Dark Side of the Moon', meta: '1973' },
 ];
 
 function Gallery() {
