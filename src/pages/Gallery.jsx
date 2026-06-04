@@ -13,6 +13,7 @@ function Gallery() {
   return (
     <div>
       <h2>Image Gallery</h2>
+      <h4>A series of images from multiple sources</h4>
       <div className="image-grid">
         {imageData.map((item) => (
           <div key={item.id} className="image-card">
